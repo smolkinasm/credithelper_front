@@ -1,0 +1,44 @@
+.App {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--back-color);
+    min-height: 100vh;
+    padding: 0 20px;
+    width: min(1200px, 100vw);
+}
+
+* {
+    color: var(--text-color);
+    font-family: Main;
+}
+
+input {
+    background-color: var(--input-bg-color);
+    color: var(--text-color)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: BoldTitle;
+}
+
+.page_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: calc(var(--nav-height) + var(--nav-page-gap));
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page_bottom {
+    padding-top: 20px;
+    width: 100vw;
+    translate: calc(-1 * (100vw - min(1200px, 100vw)) / 2 - 20px);
+}

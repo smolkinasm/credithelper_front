@@ -1,0 +1,85 @@
+.form_wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    outline: 2px solid var(--text-color);
+    border-radius: 15px;
+}
+
+.register_form> :not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.register_form button,
+.register_form__error,
+.register_form p {
+    border-radius: 10px;
+}
+
+.register_form button {
+    background: none;
+    border: none;
+    outline: 2px solid var(--text-color);
+    height: 30px;
+    margin-top: 10px;
+    font-family: BoldTitle;
+    line-height: 30px;
+}
+
+.register_form button:hover {
+    color: var(--back-color);
+    background-color: var(--text-color);
+}
+
+.register_form button:disabled {
+    background-color: gainsboro;
+    outline: 2px solid rgb(82, 82, 82);
+    color: grey;
+    cursor: not-allowed;
+}
+
+.register_form button:disabled:hover {
+    background-color: gainsboro;
+    color: grey;
+}
+
+.register_form h1 {
+    text-align: center;
+}
+
+.register_form a {
+    text-decoration: underline;
+}
+
+.register_form p[data-banner-type='error'] {
+    background-color: pink;
+    outline: 2px solid red;
+    padding: 10px;
+    color: red;
+    text-align: center;
+}
+
+.register_form p[data-banner-type='success'] {
+    background-color: rgb(171, 255, 173);
+    outline: 2px solid green;
+    padding: 10px;
+    color: green;
+    text-align: center;
+}
+
+.register_form__input_field input {
+    outline: 2px solid var(--text-color)
+}
+
+.register_form__input_field input:focus {
+    outline: 3px solid var(--text-color)
+}

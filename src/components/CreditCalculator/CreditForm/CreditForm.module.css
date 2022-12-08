@@ -1,0 +1,90 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) 70px;
+    row-gap: 10px;
+    column-gap: 25px;
+}
+
+@media only screen and (max-device-width : 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 10px;
+        padding-top: 25px;
+        border-top: 2px solid var(--text-color);
+    }
+}
+
+.calculator_input input {
+    outline: 2px solid var(--green-color);
+}
+
+.calculator_input input:focus {
+    outline: 3px solid var(--green-color)
+}
+
+.calculator_input label {
+    font-weight: 600;
+}
+
+.container button {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_red {
+    border: 1px solid var(--error-color);
+}
+
+.button_green {
+    border: 1px solid green;
+}
+
+.container button>svg {
+    stroke: var(--error-color);
+}
+
+.infofield {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.lds_dual_ring {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+.lds_dual_ring:after {
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0px;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    border-color: var(--text-color) transparent var(--text-color) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

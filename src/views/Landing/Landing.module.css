@@ -1,0 +1,29 @@
+.landing_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.landing_top img {
+    width: 100%;
+}
+
+.landing_title {
+    font-size: var(--landing-header-font-size);
+}
+
+.landing__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container p {
+    font-weight: 600;
+}

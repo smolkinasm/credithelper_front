@@ -1,0 +1,8 @@
+th {
+    text-align: start;
+    min-height: 25px;
+}
+
+td:not(:last-child()) {
+    min-width: 100px;
+}
